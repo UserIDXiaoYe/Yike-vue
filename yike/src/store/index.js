@@ -9,12 +9,11 @@ const store = createStore({
     }
   },
   mutations: {
-    increment (state) {
-      // state.count++
-    }
+    
   }
 })
 
+export default store
 const app = createApp({ /* 根组件 */ })
 
 // 将 store 实例作为插件安装
