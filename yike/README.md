@@ -31,3 +31,12 @@
 ```
 ## 2025.4.18
 创建vue项目 引入vuex,vue-router
+
+## 全局引入less
+[原文链接](https://www.jianshu.com/p/4dd7cb87eae3)
+
+## 引入iconfont
+[iconfont官网](https://www.iconfont.cn/)
+
+## 整体组件结构
+![截图](./static/image.png)

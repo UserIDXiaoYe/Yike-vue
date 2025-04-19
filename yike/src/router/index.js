@@ -3,8 +3,15 @@ import { createWebHashHistory, createRouter } from 'vue-router'
 const routes = [
     {
         path:'/',
+        redirect:'/wall',
         name:'index',
-        component:() => import('../views/YiKeIndex.vue')
+        component:() => import('../views/YiKeIndex.vue'),
+        children:[
+            {
+                path:'wall',
+                component:() => import('../views/WallMessage.vue')
+            }
+        ]
     }
 ]
 const router = createRouter({

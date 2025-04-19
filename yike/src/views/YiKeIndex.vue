@@ -1,10 +1,12 @@
 <template>
   <div>
-    <p class="title">index</p>
+    <router-view></router-view>
+    <topBar></topBar>
   </div>
 </template>
 
 <script>
+import topBar from '@/components/TopBar.vue'
 export default {
   data(){
     return{
@@ -12,7 +14,7 @@ export default {
     }
   },
   components:{
-
+    topBar
   },
   computed:{
 
@@ -34,8 +36,12 @@ export default {
 </script>
 
 <style lang='less' scoped>
+// @import '@/styles/commons.less';
+//引入字体图标
+@import url('../assets/fonts/icon/iconfont.css');
 .title {
-  font-size: 24px;
-  background-color: aqua;
+  font-size: @size-24;
+  background-color: @warning-color;
+  color: @gray-2;
 }
 </style>
