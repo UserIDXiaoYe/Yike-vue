@@ -1,7 +1,5 @@
 <template>
   <router-view></router-view>
-  <!-- <span class="iconfont icon-success"></span> -->
-  <p class="test">aaaaa</p>
 </template>
 <script>
 export default {

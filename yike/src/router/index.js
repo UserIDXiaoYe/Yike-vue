@@ -9,7 +9,7 @@ const routes = [
         children:[
             {
                 path:'wall',
-                component:() => import('../views/WallMessage.vue')
+                component: () => import('../views/WallMessage.vue'),
             }
         ]
     }
