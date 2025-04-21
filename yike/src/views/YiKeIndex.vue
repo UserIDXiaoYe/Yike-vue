@@ -8,15 +8,13 @@
     loop="loop"
     class="bg-video"
     ></video>
-    <div class="content-wrapper">
       <router-view></router-view>
-    </div>
     <foot-bar></foot-bar>
   </div>
 </template>
 
 <script>
-import topBar from '@/components/TopBar.vue'
+import TopBar from '@/components/TopBar.vue'
 import FootBar from '@/components/FootBar.vue'
 export default {
   data(){
@@ -25,7 +23,7 @@ export default {
     }
   },
   components:{
-    topBar,
+    TopBar,
     FootBar,
   },
   computed:{
@@ -58,9 +56,5 @@ export default {
   left: 0;
   z-index:-1;
 }
-.content-wrapper{
-  margin-top: 52px;  // 与 TopBar 高度一致
-  position: relative; // 确保内容层级
-  z-index: 1;        
-}
+
 </style>

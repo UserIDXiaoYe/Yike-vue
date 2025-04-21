@@ -29,7 +29,7 @@
     |   |-- utils   //公共资源
     |-- static  //全局静态资源
 ```
-## 2025.4.18
+## 项目初始
 创建vue项目 引入vuex,vue-router
 
 ## 全局引入less
@@ -40,3 +40,6 @@
 
 ## 整体组件结构
 ![截图](./static/image.png)
+
+## 引入mock插件
+```npm install mockjs --save```

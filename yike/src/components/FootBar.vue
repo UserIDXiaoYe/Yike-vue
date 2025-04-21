@@ -36,7 +36,8 @@ export default {
     width: 100%;
     height: 200px;
     background: @gray-1;
-    position: absolute; /* 使用绝对定位 */
+    position: relative; 
+    margin-top: 40px;
     bottom: 0;
     left: 0;
     display: flex;
