@@ -13,7 +13,9 @@
             <span class="iconfont icon-tianjia"></span>
         </div>
         <transition name="modal">
-            <yk-modal v-if="modal" :title="title" @close="closeModal"></yk-modal>
+            <yk-modal v-if="modal" :title="title" @close="closeModal">
+                <new-card :id="id" @addClose="closeModal()" v-if="cardSelected == -1"></new-card>
+            </yk-modal>
         </transition>
     </div>
 </template>
@@ -23,8 +25,9 @@ import NodeCard from '../components/NodeCard.vue'
 import { wallType,label } from '../utils/data.js'
 import {note} from "../../mock/index"
 import YkModal from '../components/YkModal.vue'
+import NewCard from '../components/NewCard.vue'
 export default {
-    components: { NodeCard ,YkModal, YkModal},
+    components: { NodeCard ,YkModal, YkModal,NewCard},
     data(){
         return {
             wallType,
@@ -38,6 +41,7 @@ export default {
             addBottom:30,//add按钮距离底部高度
             title:'写留言',
             modal:false,
+            cardSelected:-1,
         }
     },
     methods:{

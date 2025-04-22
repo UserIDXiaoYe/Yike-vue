@@ -49,19 +49,23 @@ export default {
 .primary{
     background: @gray-1;
     color: @gray-10;
+    cursor: pointer;
 }
 .secondary{
     background: @gray-10;
     color: @gray-1;
     border: 1px solid @gray-1;
+    cursor: pointer;
 }
 .cprimary{
     background: @primary-color;
     color: @gray-10;
     font-weight: 600;
+    cursor: pointer;
 }
 .csecondary{
     background: @gray-9;
     color: @gray-1;
+    cursor: pointer;
 }
 </style>
